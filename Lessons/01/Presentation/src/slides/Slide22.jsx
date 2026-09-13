@@ -11,6 +11,7 @@ export default function Slide22() {
                     <div>
                         <span>01</span> <b>Predict the output</b>
                         <br />
+                        <br />
                         <code>
                             city = "Suzhou"
                             <br />
@@ -32,14 +33,14 @@ export default function Slide22() {
                     <div>
                         <span>02</span> <b>Choose legal variable names</b>
                         <br />
+                        <br />
                         <code>
                             □ my_name
                             <br />
                             □ 3dogs
                             <br />
                             □ favorite-color
-                            <br />
-                            □ score2
+                            <br />□ score2
                         </code>
                     </div>
                 </div>
@@ -54,6 +55,7 @@ export default function Slide22() {
                 <div className="exit-grid">
                     <div>
                         <span>03</span> <b>Write one line of code</b>
+                        <br />
                         <br />
                         <code>
                             food = "noodles"

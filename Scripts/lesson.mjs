@@ -5,6 +5,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 const number = process.argv[2];
+const command = process.argv[3];
 
 if (!number) {
     console.error("Usage: pnpm lesson <number>");
@@ -13,6 +14,11 @@ if (!number) {
 
 if (!/^\d+$/.test(number)) {
     console.error("Lesson number must be a number.");
+    process.exit(1);
+}
+
+if (["dev", "build"].includes(command) === false) {
+    console.error("Command must be either 'dev' or 'build'.");
     process.exit(1);
 }
 
@@ -30,7 +36,7 @@ if (!existsSync(presentationPath)) {
 
 console.log(`📚 Starting Lesson ${number}...`);
 
-const child = spawn("pnpm", ["dev"], {
+const child = spawn("pnpm", [command ?? "dev"], {
     cwd: presentationPath,
     stdio: "inherit",
     shell: process.platform === "win32",

@@ -18,7 +18,9 @@ export default function Slide20() {
                     </li>
                 ))}
             </ol>
-            <p className="warning">Extensions are for practice, not for typing answers for a classmate.</p>
+            <br />
+            <br />
+            <small className="warning">Extensions are for practice, not for typing answers for a classmate.</small>
         </Slide>
     );
 }

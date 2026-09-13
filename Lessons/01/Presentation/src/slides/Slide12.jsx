@@ -11,7 +11,8 @@ export default function Slide12() {
                     <div className="var-card">
                         <code>print(name)</code>
                         <br />
-                        <strong>Alex</strong>{" "}
+                        <strong>Alex</strong>
+                        <br />
                         <span>Get the value inside the variable</span>
                     </div>
                 </div>
@@ -23,7 +24,8 @@ export default function Slide12() {
                     <div className="var-card muted">
                         <code>print("name")</code>
                         <br />
-                        <strong>name</strong>{" "}
+                        <strong>name</strong>
+                        <br />
                         <span>Display these four letters as written</span>
                     </div>
                 </div>

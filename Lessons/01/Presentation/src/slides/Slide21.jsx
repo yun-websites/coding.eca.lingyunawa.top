@@ -10,11 +10,13 @@ export default function Slide21() {
                     <em>Explain one choice clearly</em>
                 </h2>
                 <div className="share-prompts">
-                    <div>Point to one variable and say what it stores.</div>
-                    <div>Why does this text need quotation marks?</div>
-                    <div>
-                        Which value did you change? What changed in the output?
-                    </div>
+                    Point to one variable and say what it stores.
+                    <br />
+                    Why does this text need quotation marks?
+                    <br />
+                    Which value did you change?
+                    <br />
+                    What changed in the output?
                 </div>
             </DarkSection>
             <DarkSection number="04 / SHOW IT">
