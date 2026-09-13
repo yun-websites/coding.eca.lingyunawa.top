@@ -1,0 +1,36 @@
+ID,Start time,Completion time,Email,Name,Total points,Quiz feedback,Grade posted time,Last modified time,Feedback - Your name? (Both Chinese and English),Your Grade?,Points - Your Grade?,Feedback - Your Grade?,Have you programmed before?,Points - Have you programmed before?,Feedback - Have you programmed before?,Have you used Python before?,Points - Have you used Python before?,Feedback - Have you used Python before?,What (other) languages have you used before? 除了 Python 之外你是否还接触过其他编程语言？,Points - What (other) languages have you used before? 除了 Python 之外你是否还接触过其他编程语言？,Feedback - What (other) languages have you used before? 除了 Python 之外你是否还接触过其他编程语言？,How confident are you with programming?,Points - How confident are you with programming?,Feedback - How confident are you with programming?,What will this program print? 下面这个程序会输出什么？,Feedback - What will this program print? 下面这个程序会输出什么？,Points - What will this program print? 下面这个程序会输出什么？,What will this program print? 下面这个程序会输出什么？2,Feedback - What will this program print? 下面这个程序会输出什么？2,Points - What will this program print? 下面这个程序会输出什么？2,Which of these are valid Python variables? Select all that apply.,Feedback - Which of these are valid Python variables? Select all that apply.,Points - Which of these are valid Python variables? Select all that apply.,What does input() do?,Feedback - What does input() do?,Points - What does input() do?,What does this print? 下面这个程序会输出什么？,Feedback - What does this print? 下面这个程序会输出什么？,Points - What does this print? 下面这个程序会输出什么？,What will this print? 下面的程序会输出什么？,Feedback - What will this print? 下面的程序会输出什么？,Points - What will this print? 下面的程序会输出什么？,Fill in the blank. 填空,Feedback - Fill in the blank. 填空,Points - Fill in the blank. 填空,What will this print? 下面这个程序会输出什么,Points - What will this print? 下面这个程序会输出什么,Feedback - What will this print? 下面这个程序会输出什么,What will this print? 下面这个程序会输出什么2,Points - What will this print? 下面这个程序会输出什么2,Feedback - What will this print? 下面这个程序会输出什么2,What is the value of numbers[2]? number[2] 的数值是多少？,Points - What is the value of numbers[2]? number[2] 的数值是多少？,Feedback - What is the value of numbers[2]? number[2] 的数值是多少？,What will this print? 下面这个程序会输出什么3,Points - What will this print? 下面这个程序会输出什么3,Feedback - What will this print? 下面这个程序会输出什么3,Write a function called square that returns the square of a number. ,Points - Write a function called square that returns the square of a number. ,Feedback - Write a function called square that returns the square of a number. ,What is the difference between these two? 下方两段代码的不同之处是？,Points - What is the difference between these two? 下方两段代码的不同之处是？,Feedback - What is the difference between these two? 下方两段代码的不同之处是？,Find the largest number 找到最大的数字,Points - Find the largest number 找到最大的数字,Feedback - Find the largest number 找到最大的数字,Count the vowels 计算有多少个元音字母,Points - Count the vowels 计算有多少个元音字母,Feedback - Count the vowels 计算有多少个元音字母,Number Guessing Logic,Points - Number Guessing Logic,Feedback - Number Guessing Logic,
+1,9/8/26 16:41:37,9/8/26 16:44:53,anonymous,,0,,,,,9,,,Never 从来没有,,,Never 从来没有,,,NO,,,3,,,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,
+2,9/8/26 16:41:36,9/8/26 16:46:44,anonymous,,4.5,,,,,9,,,I can write simple programs 可以写简单的程序,,,I've written some Python 尝试写过,,,,,,4,,,"it will print the answer of x+y, so 8",,1,"It will print his name and his age in parenthesis. So 
+
+(Alex)
+(16)",,1,name;age2;,,0,B. Gets information from the user 从用户那里获取信息,,1, A. 10 > 5,,0,it will print the word minor,,1,,,0,"0, 1, 2, 3",0,,,0,,,0,,it will print the numbers,0.5,You should write the content printed as-is,,0,,,0,,,0,,,0,,,0,,
+3,9/8/26 16:41:48,9/8/26 16:49:33,anonymous,,1,,,,,9,,,I've tried a little 试过一点点,,,Never 从来没有,,,No…,,,5,,,Move upwards,,0,,,0,2students;age2;,,0,D. Repeats a program 重复程序,,0,B. True,,1,"If the age is >=18, then the result printed out would be adult ",,0,,,0,"0, 1, 2, 3",0,,,0,,,0,,,0,,,0,,,0,,,0,,5 ,0,,Not sure…😢😭,0,:/,
+4,9/8/26 16:41:17,9/8/26 16:52:35,anonymous,,6.5,,,,,10,,,I can write simple programs 可以写简单的程序,,,I've written some Python 尝试写过,,,c++,1,,7,,,8,,1,"Alex
+16",,1,name;age2;,,0, A. Prints something to the screen 输出内容到屏幕上,,0,B. True,,1,Minor,,1,Even,,0.5,"0, 1, 2",1,,10,0,,100,0,,,0,,square(4)=16,0,,,0,,,0,,,0,,,0,,
+5,9/8/26 16:41:21,9/8/26 16:57:33,anonymous,,6,,,,,10,,,I've tried a little 试过一点点,,,Never 从来没有,,,,,,2,,,8,,1,"Alex
+16",,1,name;2students;age2;,,0,B. Gets information from the user 从用户那里获取信息,,1, A. 10 > 5,,0,Minor,,1,Even,,0,,0,,,0,,,0,,,0,,square(10)=100,0,,一个是输出（电脑运行代码后输出这个数字，在这里是输出x）；一个是返回……？idk,2,,,0,,,0,,,0,,
+6,9/8/26 16:44:42,9/8/26 17:01:55,anonymous,,26,,,,,7,,,I can write simple programs 可以写简单的程序,,,I use Python regularly 经常使用,,,C++,1,,8,,,8,,1,"Alex
+16",,1,age2;student_name;name;,,1,B. Gets information from the user 从用户那里获取信息,,1,B. True,,1,Minor,,1,Even,,0,"0, 1, 2",1,,6,2,,30,1,,"1,2,3,4",0.5,,"def square(a):
+    return a*a
+",2,,"一个是输出x，会在屏幕上显示。
+一个是返回x，不会在屏幕上显示。
+",2,,"list=[]
+for i in range(5):
+     a=int(input())
+     list.append(a)
+max=0
+for i in list:
+     if i>max:
+         max=i
+print(i)",3,,"a=""aeiouAEIOU""  b=input()   c=0  for i in range(len(b)):  if b in a:  c+=1   print(c)",4,,"import random
+a=random.random(1,100)
+b=int(input())
+while a==b:
+     if b>a:
+           print(""太大了"")
+      if b<a:
+           print(""太小了"")
+      if b==a:
+           pritn(""正确"")",3.5,,
+7,9/8/26 17:06:41,9/8/26 17:07:24,anonymous,,0,,,,,9,,,I've tried a little 试过一点点,,,Never 从来没有,,,No,,,2,,,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,,,
+8,9/8/26 17:05:29,9/8/26 17:07:41,anonymous,,3,,,,,9,,,Never 从来没有,,,Never 从来没有,,,nop,,,1,,,8,,1,16,,0.5,student_name;my-score;,,0,C. Creates a variable 创建一个变量,,0,B. True,,1,正确,,0,wrong,,0,raise an error 程序报错,0,,0,0,,20,0,,,0,,50,0,,单词不一样,0.5,,,0,,5,0,,7,0,,
