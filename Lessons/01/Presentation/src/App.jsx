@@ -5,7 +5,7 @@ import Notes from "reveal.js/plugin/notes";
 import { lesson01Slides } from "./slides/index.js";
 
 import "reveal.js/reveal.css";
-import "reveal.js/theme/dracula.css";
+import "reveal.js/theme/white.css";
 import "reveal.js/plugin/highlight/monokai.css";
 
 export default function App() {
