@@ -242,7 +242,7 @@ function VariableMap() {
 function CodeLines({ style }) {
     return (
         <View style={style}>
-            {Array.from({ length: 16 }, (_, index) => (
+            {Array.from({ length: 10 }, (_, index) => (
                 <View key={index} style={pdfStyles.codeLine} />
             ))}
         </View>
@@ -319,6 +319,9 @@ export function WelcomeCardDocument() {
                         Write the final version of your program. Remember:
                         variables store values; print() displays them.
                     </Text>
+                    <Text style={{ ...pdfStyles.taskBody, marginBottom: -12 }}>
+                        You can do this on your computer, or write it on the paper.
+                    </Text>
                     <CodeLines style={pdfStyles.answerArea} />
                 </TaskCard>
                 <View style={pdfStyles.columns}>
@@ -374,12 +377,23 @@ export function WelcomeCardDocument() {
                 </View>
                 <View style={pdfStyles.callout}>
                     <Text>
-                        Submit this completed worksheet with your Python file
-                        named welcome_card.py.
+                        Upload your Python file named welcome_card.py if applicable, after the holiday, give the completed worksheet to Jim.
+                    </Text>
+                    <Text>{" "}</Text>
+                    <Text>
+                        You may need a computer for using Python software, even through you can directly write codes with nodepad.
                     </Text>
                     <Text>
-                        Find your online submit folder at
-                        https://link.lingyunawa.top/ssf/eca/coding-2627/student
+                        Email or send Teams messages to Jim if you need help with it.
+                    </Text>
+                    <Text>{" "}</Text>
+                    <Text>
+                        Online Submission:
+                        https://link.lingyunawa.top/ssf/eca/coding-2627/students
+                    </Text>
+                    <Text>
+                        Digital Materials (this one is Homework-22Sep2026.pdf):
+                        https://link.lingyunawa.top/ssf/eca/coding-2627/materials
                     </Text>
                 </View>
                 <Footer page="2" />
