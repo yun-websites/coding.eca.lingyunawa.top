@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, type ComponentType } from "react";
+import { type ComponentType } from "react";
 import { Deck } from "@revealjs/react";
 import RevealHighlight from "reveal.js/plugin/highlight";
 import RevealNotes from "reveal.js/plugin/notes";

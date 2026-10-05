@@ -41,6 +41,17 @@ function LessonSlidesPage() {
         );
     }
 
+    if (!lesson.worksheet) {
+        return (
+            <main className="flex min-h-screen items-center justify-center p-8">
+                <div>
+                    <h1>Worksheet not found</h1>
+                    <p>No worksheet is available for lesson {number}.</p>
+                </div>
+            </main>
+        );
+    }
+
     return (
         <ThemeProvider>
             <PreviewShell document={lesson.worksheet} />

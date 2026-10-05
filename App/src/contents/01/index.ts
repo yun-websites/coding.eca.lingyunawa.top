@@ -27,6 +27,8 @@ import { WelcomeCardDocument } from "./worksheet/content";
 export default {
     metadata: {
         id: 1,
+        title: "Python Speaks",
+        summary: "Learn to display text, use variables, and debug your first Python program by building a welcome card.",
     },
     slides: [Slide01, Slide02, Slide03, Slide04, Slide05, Slide06, Slide07, Slide08, Slide09, Slide10, Slide11, Slide12, Slide13, Slide14, Slide15, Slide16, Slide17, Slide18, Slide19, Slide20, Slide21, Slide22, Slide23, Slide24],
     worksheet: WelcomeCardDocument,
