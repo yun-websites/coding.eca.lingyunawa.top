@@ -9,19 +9,14 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as AppRouteRouteImport } from './routes/_app/route'
-import { Route as AppIndexRouteImport } from './routes/index'
+import { Route as IndexRouteImport } from './routes/index'
 import { Route as ContentSlidesNumberRouteImport } from './routes/content/slides/$number'
 import { Route as ContentWorksheetsNumberRouteImport } from './routes/content/worksheets/$number'
 
-const AppRouteRoute = AppRouteRouteImport.update({
-  id: '/_app',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AppIndexRoute = AppIndexRouteImport.update({
+const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => AppRouteRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
 const ContentSlidesNumberRoute = ContentSlidesNumberRouteImport.update({
   id: '/content/slides/$number',
@@ -35,19 +30,18 @@ const ContentWorksheetsNumberRoute = ContentWorksheetsNumberRouteImport.update({
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof AppIndexRoute
+  '/': typeof IndexRoute
   '/content/slides/$number': typeof ContentSlidesNumberRoute
   '/content/worksheets/$number': typeof ContentWorksheetsNumberRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof AppIndexRoute
+  '/': typeof IndexRoute
   '/content/slides/$number': typeof ContentSlidesNumberRoute
   '/content/worksheets/$number': typeof ContentWorksheetsNumberRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/_app': typeof AppRouteRouteWithChildren
-  '/_app/': typeof AppIndexRoute
+  '/': typeof IndexRoute
   '/content/slides/$number': typeof ContentSlidesNumberRoute
   '/content/worksheets/$number': typeof ContentWorksheetsNumberRoute
 }
@@ -57,34 +51,23 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to: '/' | '/content/slides/$number' | '/content/worksheets/$number'
   id:
-    | '__root__'
-    | '/_app'
-    | '/_app/'
-    | '/content/slides/$number'
-    | '/content/worksheets/$number'
+    '__root__' | '/' | '/content/slides/$number' | '/content/worksheets/$number'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  AppRouteRoute: typeof AppRouteRouteWithChildren
+  IndexRoute: typeof IndexRoute
   ContentSlidesNumberRoute: typeof ContentSlidesNumberRoute
   ContentWorksheetsNumberRoute: typeof ContentWorksheetsNumberRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/_app': {
-      id: '/_app'
-      path: ''
-      fullPath: '/'
-      preLoaderRoute: typeof AppRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_app/': {
-      id: '/_app/'
+    '/': {
+      id: '/'
       path: '/'
       fullPath: '/'
-      preLoaderRoute: typeof AppIndexRouteImport
-      parentRoute: typeof AppRouteRoute
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/content/slides/$number': {
       id: '/content/slides/$number'
@@ -103,20 +86,8 @@ declare module '@tanstack/react-router' {
   }
 }
 
-interface AppRouteRouteChildren {
-  AppIndexRoute: typeof AppIndexRoute
-}
-
-const AppRouteRouteChildren: AppRouteRouteChildren = {
-  AppIndexRoute: AppIndexRoute,
-}
-
-const AppRouteRouteWithChildren = AppRouteRoute._addFileChildren(
-  AppRouteRouteChildren,
-)
-
 const rootRouteChildren: RootRouteChildren = {
-  AppRouteRoute: AppRouteRouteWithChildren,
+  IndexRoute: IndexRoute,
   ContentSlidesNumberRoute: ContentSlidesNumberRoute,
   ContentWorksheetsNumberRoute: ContentWorksheetsNumberRoute,
 }

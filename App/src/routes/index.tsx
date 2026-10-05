@@ -10,12 +10,12 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import "@/styles/app.css";
 import "@/styles/typeset.css";
 
-const lessonModules = import.meta.glob<{ default: LessonContent }>("../../contents/*/index.ts", { eager: true });
+const lessonModules = import.meta.glob<{ default: LessonContent }>("../contents/*/index.ts", { eager: true });
 const lessons = Object.values(lessonModules)
     .map(({ default: lesson }) => lesson)
     .sort((left, right) => left.metadata.id - right.metadata.id);
 
-export const Route = createFileRoute("/_app/")({ component: App });
+export const Route = createFileRoute("/")({ component: App });
 
 function App() {
     return (
