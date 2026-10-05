@@ -1,9 +1,10 @@
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 export default function Slide12() {
     return (
-        <section>
+        <Stack>
             <Slide>
                 <Kicker>VARIABLES</Kicker>
                 <h2>Without quotes, get the value</h2>
@@ -30,6 +31,6 @@ export default function Slide12() {
                     </div>
                 </div>
             </Slide>
-        </section>
+        </Stack>
     );
 }

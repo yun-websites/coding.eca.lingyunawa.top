@@ -1,15 +1,15 @@
 import type { ReactNode } from "react";
 import Slide from "./Slide";
 
-interface DarkSectionProps {
+interface NumberedSlideProps {
     number: string;
     children: ReactNode;
     className?: string;
 }
 
-export default function DarkSection({ number, children, className = "" }: DarkSectionProps) {
+export default function NumberedSlide({ number, children, className = "" }: NumberedSlideProps) {
     return (
-        <Slide className={`dark-slide ${className}`} backgroundColor="#171d2b">
+        <Slide className={className}>
             <div className="section-number">{number}</div>
             {children}
         </Slide>

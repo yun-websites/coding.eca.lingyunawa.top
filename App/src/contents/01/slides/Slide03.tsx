@@ -1,5 +1,6 @@
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 const goals = [
     ["01", "Run", "Run a Python file and distinguish the editor from the output."],
@@ -25,7 +26,7 @@ function GoalCards({ items }: { items: readonly Goal[] }) {
 
 export default function Slide03() {
     return (
-        <section>
+        <Stack>
             <Slide>
                 <Kicker>LEARNING TARGETS</Kicker>
                 <h2>
@@ -56,6 +57,6 @@ export default function Slide03() {
                 </div>
                 <p className="tip">Start with one line of code and finish a personal welcome card you can share.</p>
             </Slide>
-        </section>
+        </Stack>
     );
 }

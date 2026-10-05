@@ -1,9 +1,10 @@
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 export default function Slide19() {
     return (
-        <section>
+        <Stack>
             <Slide>
                 <Kicker>BEFORE YOU RUN</Kicker>
                 <h2>Your submission checklist</h2>
@@ -24,6 +25,6 @@ export default function Slide19() {
                     Treat any error as your next clue.
                 </p>
             </Slide>
-        </section>
+        </Stack>
     );
 }

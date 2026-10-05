@@ -1,9 +1,10 @@
-import DarkSection from "@/components/slides/DarkSection";
+import NumberedSlide from "@/components/slides/NumberedSlide";
+import { Stack } from "@revealjs/react";
 
 export default function Slide21() {
     return (
-        <section>
-            <DarkSection number="04 / SHOW IT">
+        <Stack>
+            <NumberedSlide number="04 / SHOW IT">
                 <h2>
                     Share your code and
                     <br />
@@ -18,14 +19,14 @@ export default function Slide21() {
                     <br />
                     What changed in the output?
                 </div>
-            </DarkSection>
-            <DarkSection number="04 / SHOW IT">
+            </NumberedSlide>
+            <NumberedSlide number="04 / SHOW IT">
                 <h2>Conclusion</h2>
                 <p className="lead">
                     Programs are not magic: put information in variables, then ask Python to display it with{" "}
                     <code>print()</code>.
                 </p>
-            </DarkSection>
-        </section>
+            </NumberedSlide>
+        </Stack>
     );
 }

@@ -1,10 +1,11 @@
 import CodeBlock from "@/components/slides/CodeBlock";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 export default function Slide13() {
     return (
-        <section>
+        <Stack>
             <Slide className="practice-slide">
                 <Kicker>READ THE CODE</Kicker>
                 <h2>Predict the output</h2>
@@ -24,6 +25,6 @@ export default function Slide13() {
                     <div>pet</div>
                 </div>
             </Slide>
-        </section>
+        </Stack>
     );
 }

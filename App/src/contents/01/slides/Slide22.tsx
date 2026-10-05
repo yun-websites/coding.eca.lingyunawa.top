@@ -1,9 +1,10 @@
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 export default function Slide22() {
     return (
-        <section>
+        <Stack>
             <Slide className="exit-slide">
                 <Kicker>EXIT TICKET · 4 MIN</Kicker>
                 <h2>Before you leave, complete 3 questions independently</h2>
@@ -69,6 +70,6 @@ export default function Slide22() {
                     print(food).
                 </aside>
             </Slide>
-        </section>
+        </Stack>
     );
 }

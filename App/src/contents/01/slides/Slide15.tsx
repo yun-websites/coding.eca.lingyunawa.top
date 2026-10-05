@@ -1,12 +1,13 @@
 import type { CSSProperties } from "react";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 const challengeStyle = { "--r-bold-color": "#ffff87" } as CSSProperties;
 
 export default function Slide15() {
     return (
-        <section style={challengeStyle}>
+        <Stack style={challengeStyle}>
             <Slide className="challenge-slide" backgroundColor="#9ed8c2">
                 <Kicker dark>QUICK CHECK</Kicker>
                 <h2>Write ✅ or ❌</h2>
@@ -41,6 +42,6 @@ export default function Slide15() {
                     Hint: Underscores are allowed; hyphens are not; <br />a name cannot start with a number.
                 </p>
             </Slide>
-        </section>
+        </Stack>
     );
 }

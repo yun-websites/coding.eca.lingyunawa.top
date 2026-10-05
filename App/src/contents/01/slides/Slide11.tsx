@@ -1,9 +1,9 @@
 import CodeBlock from "@/components/slides/CodeBlock";
-import DarkSection from "@/components/slides/DarkSection";
+import NumberedSlide from "@/components/slides/NumberedSlide";
 
 export default function Slide11() {
     return (
-        <DarkSection number="02 / NAME IT">
+        <NumberedSlide number="02 / NAME IT">
             <h2>
                 Give information a <em>name</em>
             </h2>
@@ -13,6 +13,6 @@ export default function Slide11() {
                 and the contents are the value.
             </p>
             <CodeBlock className="dark-code">{'name = "Alex"\nclub = "ECA Coding Club"\n\nprint(name)\nprint(club)'}</CodeBlock>
-        </DarkSection>
+        </NumberedSlide>
     );
 }

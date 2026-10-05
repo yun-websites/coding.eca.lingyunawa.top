@@ -1,9 +1,10 @@
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 export default function Slide14() {
     return (
-        <section>
+        <Stack>
             <Slide>
                 <Kicker>NAMING RULES</Kicker>
                 <h2>Three variable naming rules</h2>
@@ -56,6 +57,6 @@ export default function Slide14() {
                     A good name should explain its purpose: <code>student_name</code> is clearer than <code>x</code>.
                 </p>
             </Slide>
-        </section>
+        </Stack>
     );
 }

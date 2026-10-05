@@ -1,3 +1,4 @@
+import { Code } from "@revealjs/react";
 import type { ReactNode } from "react";
 
 interface CodeBlockProps {
@@ -6,12 +7,6 @@ interface CodeBlockProps {
     className?: string;
 }
 
-export default function CodeBlock({ children, language = "python", className = "" }: CodeBlockProps) {
-    return (
-        <pre className={className}>
-            <code className={`language-${language}`} data-trim>
-                {String(children).trim()}
-            </code>
-        </pre>
-    );
+export default function CodeBlock({ children, language = "python" }: CodeBlockProps) {
+    return <Code className={`language-${language}`}>{String(children).trim()}</Code>;
 }

@@ -1,10 +1,11 @@
 import CodeBlock from "@/components/slides/CodeBlock";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 export default function Slide06() {
     return (
-        <section>
+        <Stack>
             <Slide className="practice-slide">
                 <Kicker>PREDICT → RUN → CHECK</Kicker>
                 <h2>Output happens one line at a time</h2>
@@ -30,6 +31,6 @@ export default function Slide06() {
                     Two <code>print()</code> calls create two output lines. Do not write only a general idea.
                 </p>
             </Slide>
-        </section>
+        </Stack>
     );
 }

@@ -1,10 +1,11 @@
 import CodeBlock from "@/components/slides/CodeBlock";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 export default function Slide07() {
     return (
-        <section>
+        <Stack>
             <Slide className="practice-slide">
                 <Kicker>WHAT CHANGES?</Kicker>
                 <h2>Quotation marks change how Python understands code</h2>
@@ -31,6 +32,6 @@ export default function Slide07() {
                     </div>
                 </div>
             </Slide>
-        </section>
+        </Stack>
     );
 }

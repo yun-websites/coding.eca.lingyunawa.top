@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Slide as SlidePrimitive } from "@revealjs/react";
 
 export interface SlideProps {
     children: ReactNode;
@@ -8,8 +9,8 @@ export interface SlideProps {
 
 export default function Slide({ children, className = "", backgroundColor }: SlideProps) {
     return (
-        <section className={className} data-background-color={backgroundColor} data-transition="slide">
+        <SlidePrimitive className={className} data-background-color={backgroundColor} data-transition="slide">
             {children}
-        </section>
+        </SlidePrimitive>
     );
 }

@@ -1,10 +1,11 @@
 import CodeBlock from "@/components/slides/CodeBlock";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
+import { Stack } from "@revealjs/react";
 
 export default function Slide09() {
     return (
-        <section>
+        <Stack>
             <Slide>
                 <Kicker>DEBUGGING IS INFORMATION</Kicker>
                 <h2>Errors are clues, not failure</h2>
@@ -48,6 +49,6 @@ export default function Slide09() {
                     Useful Tip: Read the last line of the error first; it usually tells you what Python is complaining about.
                 </p>
             </Slide>
-        </section>
+        </Stack>
     );
 }

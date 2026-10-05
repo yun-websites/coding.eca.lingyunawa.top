@@ -6,9 +6,13 @@ export default function Slide05() {
     return (
         <Slide>
             <Kicker>INPUT · COLLECT DATA</Kicker>
-            <h2>`input()` pauses and asks.</h2>
+            <h2>
+                <code>input()</code> pauses and asks.
+            </h2>
             <CodeBlock>{'name = input("Name: ")\nage_text = input("Age: ")\n\nprint(name)\nprint(age_text)'}</CodeBlock>
-            <p className="prompt">Prompt → user types → value is saved in a variable → program continues</p>
+            <p className="prompt">
+                Prompt → user types → <br /> value is saved in a variable → program continues
+            </p>
         </Slide>
     );
 }

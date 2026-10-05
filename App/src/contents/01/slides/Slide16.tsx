@@ -1,8 +1,8 @@
-import DarkSection from "@/components/slides/DarkSection";
+import NumberedSlide from "@/components/slides/NumberedSlide";
 
 export default function Slide16() {
     return (
-        <DarkSection number="03 / MAKE IT" className="project-intro">
+        <NumberedSlide number="03 / MAKE IT" className="project-intro">
             <h2>
                 Main task:
                 <br />
@@ -10,6 +10,6 @@ export default function Slide16() {
             </h2>
             <p className="lead">Introduce yourself with code. Finish the minimum version first, then add your own design.</p>
             <div className="success-badge">2 PRINTS + VARIABLES</div>
-        </DarkSection>
+        </NumberedSlide>
     );
 }

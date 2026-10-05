@@ -2,7 +2,7 @@ import Slide from "@/components/slides/Slide";
 
 export default function Slide01() {
     return (
-        <Slide className="title-slide" backgroundColor="#10141f">
+        <Slide>
             <div className="eyebrow">ECA CODING CLUB · LESSON 02</div>
             <h1>
                 Variable
