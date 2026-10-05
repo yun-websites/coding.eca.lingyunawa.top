@@ -4,11 +4,11 @@ import { ThemeProvider } from "@/components/general/theme-provider";
 import type { LessonContent } from "@/lib/type";
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, BookOpen, FileText, XIcon } from "lucide-react";
+import { Button } from "@/components/shadcn/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/shadcn/tooltip";
 
 import "@/styles/app.css";
 import "@/styles/typeset.css";
-import { Button } from "@/components/shadcn/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/shadcn/tooltip";
 
 const lessonModules = import.meta.glob<{ default: LessonContent }>("../../contents/*/index.ts", { eager: true });
 const lessons = Object.values(lessonModules)

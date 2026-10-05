@@ -10,7 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as AppRouteRouteImport } from './routes/_app/route'
-import { Route as AppIndexRouteImport } from './routes/_app/index'
+import { Route as AppIndexRouteImport } from './routes/index'
 import { Route as ContentSlidesNumberRouteImport } from './routes/content/slides/$number'
 import { Route as ContentWorksheetsNumberRouteImport } from './routes/content/worksheets/$number'
 
