@@ -2,11 +2,11 @@
 
 import { createFileRoute } from "@tanstack/react-router";
 import { Presentation } from "@/components/slides/Presentation";
+import type { LessonContent } from "@/lib/type";
 
 import "reveal.js/reveal.css";
-import "reveal.js/theme/white.css";
+import "reveal.js/theme/black.css";
 import "reveal.js/plugin/highlight/monokai.css";
-import type { LessonContent } from "@/lib/type";
 
 const lessonModules = import.meta.glob<{ default: LessonContent }>("../../../contents/*/index.ts", { eager: true });
 

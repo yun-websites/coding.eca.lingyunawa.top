@@ -8,7 +8,7 @@ export interface SlideProps {
 
 export default function Slide({ children, className = "", backgroundColor }: SlideProps) {
     return (
-        <section className={className} data-background-color={backgroundColor}>
+        <section className={className} data-background-color={backgroundColor} data-transition="slide">
             {children}
         </section>
     );
