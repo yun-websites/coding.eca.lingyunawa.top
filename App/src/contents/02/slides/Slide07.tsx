@@ -7,7 +7,7 @@ export default function Slide07() {
         <Slide>
             <Kicker>CONVERT WHEN NEEDED</Kicker>
             <h2>
-                Choose <code>int</code> or <code>float</code>.
+                Choose&nbsp;&nbsp;<code>int</code>&nbsp;&nbsp;or&nbsp;&nbsp;<code>float</code>.
             </h2>
             <CodeBlock>
                 {
@@ -16,8 +16,10 @@ export default function Slide07() {
             </CodeBlock>
             <p className="tip">
                 <code>int</code> stores whole numbers.
-                <br /> <code>float</code> stores decimal numbers.
+                <br />
+                <code>float</code> stores decimal numbers.
             </p>
         </Slide>
     );
 }
+

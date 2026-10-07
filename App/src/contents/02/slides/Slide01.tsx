@@ -12,6 +12,7 @@ export default function Slide01() {
             <p className="subtitle">Input, Types &amp; Data Processing</p>
             <div className="title-meta">
                 <span>60 MIN</span>
+                &nbsp;·&nbsp;
                 <span>BUILD A DATA DASHBOARD</span>
             </div>
         </Slide>

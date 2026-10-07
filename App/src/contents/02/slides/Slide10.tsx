@@ -16,8 +16,11 @@ export default function Slide10() {
                 }
             </CodeBlock>
             <p className="tip">
-                Indexes start at <code>0</code>. <code>append()</code> adds one item at the end.
+                Indexes start at <code>0</code>
+                <br />
+                <code>.append()</code> adds one item at the end.
             </p>
         </Slide>
     );
 }
+

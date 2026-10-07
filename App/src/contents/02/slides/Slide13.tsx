@@ -16,7 +16,7 @@ export default function Slide13() {
                 <div className="repair-rules">
                     <p>Which type is each variable?</p>
                     <p>
-                        How would you read one item from <code>tools</code>?
+                        How would you read the first item from <code>tools</code>?
                     </p>
                     <p>
                         How would you read the title from <code>book</code>?

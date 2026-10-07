@@ -12,7 +12,10 @@ export default function Slide11() {
                     'profile = {"name": "Mina", "city": "Suzhou"}\n\nprint(profile["name"])\nprofile["city"] = "Nanjing"\nprint(profile)'
                 }
             </CodeBlock>
-            <p className="tip">A dictionary uses meaningful keys instead of positions.</p>
+            <p className="tip">
+                A dictionary uses meaningful keys <br /> instead of positions.
+            </p>
         </Slide>
     );
 }
+

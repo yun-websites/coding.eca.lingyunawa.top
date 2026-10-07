@@ -6,8 +6,10 @@ export default function Slide16() {
     return (
         <Stack>
             <Slide>
-                <Kicker>PROJECT CHECKLIST</Kicker>
-                <h2>Does your dashboard use every tool?</h2>
+                <Kicker>PROJECT CHECKLIST (1/2)</Kicker>
+                <h2>
+                    Does your dashboard <br /> use every tool?
+                </h2>
                 <p>
                     □ Two <code>input()</code> values
                 </p>
@@ -22,7 +24,7 @@ export default function Slide16() {
                 </p>
             </Slide>
             <Slide>
-                <Kicker>PROJECT CHECKLIST</Kicker>
+                <Kicker>PROJECT CHECKLIST (2/2)</Kicker>
                 <h2>Does your dashboard use every tool?</h2>
                 <p>
                     □ <code>dict</code> plus a key lookup
@@ -36,3 +38,4 @@ export default function Slide16() {
         </Stack>
     );
 }
+

@@ -10,22 +10,22 @@ export default function Slide03() {
             </h2>
             <div className="goal-grid">
                 <div className="goal">
-                    <b>str</b> <span>text</span>
+                    <b>str</b> → <span>text</span>
                 </div>
                 <div className="goal">
-                    <b>int</b> <span>whole numbers</span>
+                    <b>int</b> → <span>whole numbers</span>
                 </div>
                 <div className="goal">
-                    <b>float</b> <span>decimal numbers</span>
+                    <b>float</b> → <span>decimal numbers</span>
                 </div>
                 <div className="goal">
-                    <b>list</b> <span>ordered collection</span>
+                    <b>list</b> → <span>ordered collection</span>
                 </div>
                 <div className="goal">
-                    <b>dict</b> <span>key/value data</span>
+                    <b>dict</b> → <span>key/value data</span>
                 </div>
                 <div className="goal">
-                    <b>tuple</b> <span>fixed sequence</span>
+                    <b>tuple</b> → <span>fixed sequence</span>
                 </div>
             </div>
         </Slide>

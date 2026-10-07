@@ -6,7 +6,10 @@ export default function Slide04() {
     return (
         <Slide>
             <Kicker>PRINT · START HERE</Kicker>
-            <h2>Show values, not just words.</h2>
+            <h2>
+                Show values, <br />
+                not just words.
+            </h2>
             <div className="split">
                 <CodeBlock>{'name = "Mina"\nage = 13\n\nprint("Name:", name)\nprint("Next year:", age + 1)'}</CodeBlock>
                 <div>
@@ -19,3 +22,4 @@ export default function Slide04() {
         </Slide>
     );
 }
+

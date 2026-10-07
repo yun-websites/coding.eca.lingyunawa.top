@@ -13,7 +13,11 @@ export default function Slide12() {
             <CodeBlock>
                 {"location = (31.2, 120.6)\nlatitude, longitude = location\n\nprint(latitude)\nprint(longitude)"}
             </CodeBlock>
-            <p className="tip">Tuples keep order. Use them for data that this program will not change.</p>
+            <p className="tip">
+                Tuples keep order. <br />
+                Use them for data that this program will not change.
+            </p>
         </Slide>
     );
 }
+
