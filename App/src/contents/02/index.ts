@@ -16,6 +16,7 @@ import Slide15 from "./slides/Slide15";
 import Slide16 from "./slides/Slide16";
 import Slide17 from "./slides/Slide17";
 import Slide18 from "./slides/Slide18";
+import { VariableToolboxDocument } from "./worksheet/content";
 
 export default {
     metadata: {
@@ -24,4 +25,5 @@ export default {
         summary: "Collect information, work with Python data types, and build a personal data dashboard.",
     },
     slides: [Slide01, Slide02, Slide03, Slide04, Slide05, Slide06, Slide07, Slide08, Slide09, Slide10, Slide11, Slide12, Slide13, Slide14, Slide15, Slide16, Slide17, Slide18],
+    worksheet: VariableToolboxDocument,
 };

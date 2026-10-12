@@ -5,7 +5,7 @@ export const pdfStyles = StyleSheet.create({
         backgroundColor: "#fafafa",
         color: "#27272a",
         fontFamily: "Helvetica",
-        padding: 34,
+        padding: 28,
         fontSize: 9.5,
     },
     header: {
@@ -73,7 +73,7 @@ export const pdfStyles = StyleSheet.create({
         fontSize: 9,
         lineHeight: 1.5,
         padding: 9,
-        marginTop: 7,
+        marginTop: 4,
     },
     prompt: { color: "#71717a", fontSize: 8.5, lineHeight: 1.35, marginTop: 6 },
     answerLine: { borderBottom: "1 solid #a1a1aa", height: 15, marginTop: 4 },
