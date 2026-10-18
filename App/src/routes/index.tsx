@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/general/theme-provider";
 import type { LessonContent } from "@/lib/type";
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, BookOpen, FileText, XIcon } from "lucide-react";
-import { Button } from "@/components/shadcn/button";
+import { Button, buttonVariants } from "@/components/shadcn/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/shadcn/tooltip";
 
 import "@/styles/app.css";
@@ -64,35 +64,36 @@ function App() {
                                                         <ArrowUpRight aria-hidden="true" className="ml-auto size-4" />
                                                     </Button>
                                                 </Link>
-                                                <TooltipProvider>
-                                                    <Tooltip>
-                                                        <TooltipTrigger>
-                                                            <Link
-                                                                params={{ number }}
-                                                                to="/content/worksheets/$number"
-                                                                target="_blank"
-                                                                disabled={!lesson.worksheet}>
+                                                {lesson.worksheet ? (
+                                                    <Link
+                                                        className={buttonVariants({ variant: "secondary" }) + " w-full justify-start"}
+                                                        params={{ number }}
+                                                        to="/content/worksheets/$number"
+                                                        target="_blank">
+                                                        <FileText aria-hidden="true" className="size-4" />
+                                                        Worksheet
+                                                        <ArrowUpRight aria-hidden="true" className="ml-auto size-4" />
+                                                    </Link>
+                                                ) : (
+                                                    <TooltipProvider>
+                                                        <Tooltip>
+                                                            <TooltipTrigger render={<span />}>
                                                                 <Button
-                                                                    className="w-full cursor-pointer justify-start"
+                                                                    className="w-full justify-start"
                                                                     variant="secondary"
-                                                                    disabled={!lesson.worksheet}>
+                                                                    disabled>
                                                                     <FileText aria-hidden="true" className="size-4" />
                                                                     Worksheet
-                                                                    <ArrowUpRight
-                                                                        aria-hidden="true"
-                                                                        className="ml-auto size-4"
-                                                                    />
+                                                                    <ArrowUpRight aria-hidden="true" className="ml-auto size-4" />
                                                                 </Button>
-                                                            </Link>
-                                                        </TooltipTrigger>
-                                                        {!lesson.worksheet && (
+                                                            </TooltipTrigger>
                                                             <TooltipContent side="left">
                                                                 <XIcon size={12} />
                                                                 No worksheet is available
                                                             </TooltipContent>
-                                                        )}
-                                                    </Tooltip>
-                                                </TooltipProvider>
+                                                        </Tooltip>
+                                                    </TooltipProvider>
+                                                )}
                                             </div>
                                         </section>
                                     </div>
