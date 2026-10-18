@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/slides/CodeBlock";
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 
@@ -7,7 +8,7 @@ export default function Slide07() {
         <Slide>
             <Kicker>CONVERT WHEN NEEDED</Kicker>
             <h2>
-                Choose&nbsp;&nbsp;<code>int</code>&nbsp;&nbsp;or&nbsp;&nbsp;<code>float</code>.
+                Choose&nbsp;&nbsp;<InlineCode>int</InlineCode>&nbsp;&nbsp;or&nbsp;&nbsp;<InlineCode>float</InlineCode>.
             </h2>
             <CodeBlock>
                 {
@@ -15,9 +16,9 @@ export default function Slide07() {
                 }
             </CodeBlock>
             <p className="tip">
-                <code>int</code> stores whole numbers.
+                <InlineCode>int</InlineCode> stores whole numbers.
                 <br />
-                <code>float</code> stores decimal numbers.
+                <InlineCode>float</InlineCode> stores decimal numbers.
             </p>
         </Slide>
     );

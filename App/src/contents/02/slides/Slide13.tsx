@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/slides/CodeBlock";
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 
@@ -16,10 +17,10 @@ export default function Slide13() {
                 <div className="repair-rules">
                     <p>Which type is each variable?</p>
                     <p>
-                        How would you read the first item from <code>tools</code>?
+                        How would you read the first item from <InlineCode>tools</InlineCode>?
                     </p>
                     <p>
-                        How would you read the title from <code>book</code>?
+                        How would you read the title from <InlineCode>book</InlineCode>?
                     </p>
                 </div>
             </div>

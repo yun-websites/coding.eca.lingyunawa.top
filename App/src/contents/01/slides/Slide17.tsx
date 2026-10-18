@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/slides/CodeBlock";
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 
@@ -15,7 +16,7 @@ export default function Slide17() {
             <ul className="requirements" style={{ marginLeft: "-1rem" }}>
                 <li>At least two variables</li>
                 <li>
-                    At least two <code>print()</code> calls
+                    At least two <InlineCode>print()</InlineCode> calls
                 </li>
                 <li>Runs without errors</li>
             </ul>

@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/slides/CodeBlock";
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 import { Stack } from "@revealjs/react";
@@ -28,7 +29,7 @@ export default function Slide06() {
                     </div>
                 </div>
                 <p className="prompt">
-                    Two <code>print()</code> calls create two output lines. Do not write only a general idea.
+                    Two <InlineCode>print()</InlineCode> calls create two output lines. Do not write only a general idea.
                 </p>
             </Slide>
         </Stack>

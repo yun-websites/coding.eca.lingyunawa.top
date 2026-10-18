@@ -1,3 +1,4 @@
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 import { Stack } from "@revealjs/react";
@@ -12,7 +13,7 @@ export default function Slide17() {
                     <div>
                         <b>01</b>
                         <p>
-                            What type does <code>input()</code> return?
+                            What type does <InlineCode>input()</InlineCode> return?
                         </p>
                     </div>
                     <div>
@@ -28,13 +29,13 @@ export default function Slide17() {
                     <div>
                         <b>03</b>
                         <p>
-                            Read <code>city</code> from <code>person</code>.
+                            Read <InlineCode>city</InlineCode> from <InlineCode>person</InlineCode>.
                         </p>
                     </div>
                     <div>
                         <b>04</b>
                         <p>
-                            What does <code>items[0]</code> mean?
+                            What does <InlineCode>items[0]</InlineCode> mean?
                         </p>
                     </div>
                 </div>

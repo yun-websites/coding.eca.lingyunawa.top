@@ -1,3 +1,4 @@
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 import { Stack } from "@revealjs/react";
@@ -12,7 +13,7 @@ export default function Slide19() {
                     <li>Does every piece of text have matching quotation marks?</li>
                     <li>Do variable names avoid spaces, hyphens, and leading numbers?</li>
                     <li>
-                        Should <code>name</code> in <code>print(name)</code> be outside quotation marks?
+                        Should <InlineCode>name</InlineCode> in <InlineCode>print(name)</InlineCode> be outside quotation marks?
                     </li>
                     <li>Does the output match what I wanted to show?</li>
                 </ul>

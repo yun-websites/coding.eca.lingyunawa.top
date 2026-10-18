@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/slides/CodeBlock";
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 import { Stack } from "@revealjs/react";
@@ -14,7 +15,7 @@ export default function Slide09() {
                         <div className="error-title">NameError</div>
                         <CodeBlock>print(Hello)</CodeBlock>
                         <p>
-                            Python treats <code>Hello</code> as a variable name.
+                            Python treats <InlineCode>Hello</InlineCode> as a variable name.
                         </p>
                         <div className="fix">
                             Correct version 👉{" "}

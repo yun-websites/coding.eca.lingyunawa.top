@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/slides/CodeBlock";
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 
@@ -16,9 +17,9 @@ export default function Slide10() {
                 }
             </CodeBlock>
             <p className="tip">
-                Indexes start at <code>0</code>
+                Indexes start at <InlineCode>0</InlineCode>
                 <br />
-                <code>.append()</code> adds one item at the end.
+                <InlineCode>.append()</InlineCode> adds one item at the end.
             </p>
         </Slide>
     );

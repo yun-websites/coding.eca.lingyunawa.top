@@ -1,3 +1,4 @@
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 
@@ -12,8 +13,8 @@ export default function Slide08() {
                 <p>{'{"subject": "Python"}'} &nbsp; (31.2, 120.6)</p>
             </div>
             <p className="hint">
-                Write: <code>str</code>, <code>int</code>, <code>float</code>, <code>list</code>, <code>dict</code>, or{" "}
-                <code>tuple</code>.
+                Write: <InlineCode>str</InlineCode>, <InlineCode>int</InlineCode>, <InlineCode>float</InlineCode>, <InlineCode>list</InlineCode>, <InlineCode>dict</InlineCode>, or{" "}
+                <InlineCode>tuple</InlineCode>.
             </p>
         </Slide>
     );

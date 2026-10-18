@@ -1,3 +1,4 @@
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 import { Stack } from "@revealjs/react";
@@ -14,7 +15,7 @@ export default function Slide14() {
                         <p>
                             Use only <strong>letters, numbers, and underscores</strong>.
                         </p>
-                        <code>student_name</code> ✅
+                        <InlineCode>student_name</InlineCode> ✅
                     </div>
                 </div>
             </Slide>
@@ -27,9 +28,9 @@ export default function Slide14() {
                         <p>
                             Do not start with <strong>a number</strong>.
                         </p>
-                        <code>2students</code> ❌
+                        <InlineCode>2students</InlineCode> ❌
                         <br />
-                        <code>student2</code> ✅
+                        <InlineCode>student2</InlineCode> ✅
                     </div>
                 </div>
             </Slide>
@@ -40,13 +41,13 @@ export default function Slide14() {
                     <div>
                         <span>03</span>
                         <p>
-                            Do not use <strong>hyphens</strong> <code>-</code>.
+                            Do not use <strong>hyphens</strong> <InlineCode>-</InlineCode>.
                             <br />
-                            Use <strong>underscores</strong> <code>_</code> instead.
+                            Use <strong>underscores</strong> <InlineCode>_</InlineCode> instead.
                         </p>
-                        <code>my-score</code> ❌
+                        <InlineCode>my-score</InlineCode> ❌
                         <br />
-                        <code>my_score</code> ✅
+                        <InlineCode>my_score</InlineCode> ✅
                     </div>
                 </div>
             </Slide>
@@ -54,7 +55,7 @@ export default function Slide14() {
                 <Kicker>NAMING RULES</Kicker>
                 <h2>Three variable naming rules</h2>
                 <p className="tip">
-                    A good name should explain its purpose: <code>student_name</code> is clearer than <code>x</code>.
+                    A good name should explain its purpose: <InlineCode>student_name</InlineCode> is clearer than <InlineCode>x</InlineCode>.
                 </p>
             </Slide>
         </Stack>

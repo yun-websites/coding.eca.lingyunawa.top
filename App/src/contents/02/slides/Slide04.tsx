@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/slides/CodeBlock";
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 
@@ -14,7 +15,7 @@ export default function Slide04() {
                 <CodeBlock>{'name = "Mina"\nage = 13\n\nprint("Name:", name)\nprint("Next year:", age + 1)'}</CodeBlock>
                 <div>
                     <p className="lead">
-                        <code>print()</code> can display several values together.
+                        <InlineCode>print()</InlineCode> can display several values together.
                     </p>
                     <p className="tip">Numbers can be calculated before they are printed.</p>
                 </div>

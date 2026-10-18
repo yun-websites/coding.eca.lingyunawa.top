@@ -1,3 +1,4 @@
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 
@@ -11,9 +12,9 @@ export default function Slide23() {
                 Make the program ask you first
             </h2>
             <div className="next-code">
-                <code>input()</code> <span>👉 Take Input</span>
+                <InlineCode>input()</InlineCode> <span>👉 Take Input</span>
                 <br />
-                <code>print()</code> <span>👉 Give Output</span>
+                <InlineCode>print()</InlineCode> <span>👉 Give Output</span>
             </div>
             <p className="lead dark-lead">
                 Turn the welcome card into a program that asks for and responds to a name. Keep input and output as text for

@@ -1,3 +1,4 @@
+import InlineCode from "@/components/slides/InlineCode";
 import Kicker from "@/components/slides/Kicker";
 import Slide from "@/components/slides/Slide";
 import { Stack } from "@revealjs/react";
@@ -10,7 +11,7 @@ export default function Slide12() {
                 <h2>Without quotes, get the value</h2>
                 <div className="variable-compare">
                     <div className="var-card">
-                        <code>print(name)</code>
+                        <InlineCode>print(name)</InlineCode>
                         <br />
                         <strong>Alex</strong>
                         <br />
@@ -23,7 +24,7 @@ export default function Slide12() {
                 <h2>With quotes, display the word</h2>
                 <div className="variable-compare">
                     <div className="var-card muted">
-                        <code>print("name")</code>
+                        <InlineCode>print("name")</InlineCode>
                         <br />
                         <strong>name</strong>
                         <br />

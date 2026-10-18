@@ -1,3 +1,4 @@
+import InlineCode from "@/components/slides/InlineCode";
 import NumberedSlide from "@/components/slides/NumberedSlide";
 import { Stack } from "@revealjs/react";
 
@@ -24,7 +25,7 @@ export default function Slide21() {
                 <h2>Conclusion</h2>
                 <p className="lead">
                     Programs are not magic: put information in variables, then ask Python to display it with{" "}
-                    <code>print()</code>.
+                    <InlineCode>print()</InlineCode>.
                 </p>
             </NumberedSlide>
         </Stack>
