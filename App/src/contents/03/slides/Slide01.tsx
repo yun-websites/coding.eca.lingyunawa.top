@@ -10,7 +10,9 @@ export default function Slide01() {
                 <span>Decisions</span>
             </h1>
             <p className="subtitle">Conditions &amp; Loops</p>
-            <div className="title-meta"><span>60 MIN</span>&nbsp;·&nbsp;<span>BUILD A CHALLENGE PROGRAM</span></div>
+            <div className="title-meta">
+                <span>60 MIN</span>&nbsp;·&nbsp;<span>BUILD A CHALLENGE PROGRAM</span>
+            </div>
         </Slide>
     );
 }

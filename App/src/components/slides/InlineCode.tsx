@@ -8,4 +8,3 @@ interface InlineCodeProps {
 export default function InlineCode({ children, className = "" }: InlineCodeProps) {
     return <code className={`inline-code ${className}`.trim()}>{children}</code>;
 }
-

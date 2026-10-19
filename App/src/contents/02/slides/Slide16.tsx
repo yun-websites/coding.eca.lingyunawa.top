@@ -39,4 +39,3 @@ export default function Slide16() {
         </Stack>
     );
 }
-

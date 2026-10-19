@@ -14,4 +14,3 @@ export default function Slide14() {
         </NumberedSlide>
     );
 }
-

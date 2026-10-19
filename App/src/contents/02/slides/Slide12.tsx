@@ -20,4 +20,3 @@ export default function Slide12() {
         </Slide>
     );
 }
-

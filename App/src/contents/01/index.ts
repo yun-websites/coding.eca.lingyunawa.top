@@ -22,7 +22,8 @@ import Slide21 from "./slides/Slide21";
 import Slide22 from "./slides/Slide22";
 import Slide23 from "./slides/Slide23";
 import Slide24 from "./slides/Slide24";
-import { WelcomeCardDocument } from "./worksheet/content";
+import { WelcomeCardDocument as CnWorksheet } from "./worksheet/cn";
+import { WelcomeCardDocument as EnWorksheet } from "./worksheet/en";
 
 export default {
     metadata: {
@@ -31,5 +32,8 @@ export default {
         summary: "Learn to display text, use variables, and debug your first Python program by building a welcome card.",
     },
     slides: [Slide01, Slide02, Slide03, Slide04, Slide05, Slide06, Slide07, Slide08, Slide09, Slide10, Slide11, Slide12, Slide13, Slide14, Slide15, Slide16, Slide17, Slide18, Slide19, Slide20, Slide21, Slide22, Slide23, Slide24],
-    worksheet: WelcomeCardDocument,
+    worksheet: {
+        en: EnWorksheet,
+        cn: CnWorksheet,
+    },
 };

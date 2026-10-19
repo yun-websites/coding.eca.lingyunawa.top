@@ -1,10 +1,22 @@
-import { StyleSheet } from "@react-pdf/renderer";
+import { Font, StyleSheet } from "@react-pdf/renderer";
+
+Font.register({
+    family: "SimHei",
+    src: "/fonts/SimHei.ttf",
+});
 
 export const pdfStyles = StyleSheet.create({
     page: {
         backgroundColor: "#fafafa",
         color: "#27272a",
         fontFamily: "Helvetica",
+        padding: 28,
+        fontSize: 9.5,
+    },
+    cjkPage: {
+        backgroundColor: "#fafafa",
+        color: "#27272a",
+        fontFamily: "SimHei",
         padding: 28,
         fontSize: 9.5,
     },
@@ -72,6 +84,7 @@ export const pdfStyles = StyleSheet.create({
         fontFamily: "Courier",
         fontSize: 9,
         lineHeight: 1.5,
+        whiteSpace: "pre",
         padding: 9,
         marginTop: 4,
     },

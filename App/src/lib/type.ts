@@ -7,5 +7,8 @@ export interface LessonContent {
         summary: string;
     };
     slides: readonly ComponentType[];
-    worksheet?: ComponentType;
+    worksheet?: {
+        en: ComponentType;
+        cn: ComponentType;
+    };
 }

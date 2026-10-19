@@ -65,15 +65,34 @@ function App() {
                                                     </Button>
                                                 </Link>
                                                 {lesson.worksheet ? (
-                                                    <Link
-                                                        className={buttonVariants({ variant: "secondary" }) + " w-full justify-start"}
-                                                        params={{ number }}
-                                                        to="/content/worksheets/$number"
-                                                        target="_blank">
-                                                        <FileText aria-hidden="true" className="size-4" />
-                                                        Worksheet
-                                                        <ArrowUpRight aria-hidden="true" className="ml-auto size-4" />
-                                                    </Link>
+                                                    <div className="flex gap-2">
+                                                        <Link
+                                                            className={
+                                                                buttonVariants({ variant: "secondary" }) +
+                                                                " flex-1 justify-start"
+                                                            }
+                                                            params={{ number }}
+                                                            search={{ lang: "en" }}
+                                                            to="/content/worksheets/$number"
+                                                            target="_blank">
+                                                            <FileText aria-hidden="true" className="size-4" />
+                                                            Worksheet EN
+                                                            <ArrowUpRight aria-hidden="true" className="ml-auto size-4" />
+                                                        </Link>
+                                                        <Link
+                                                            className={
+                                                                buttonVariants({ variant: "secondary" }) +
+                                                                " flex-1 justify-start"
+                                                            }
+                                                            params={{ number }}
+                                                            search={{ lang: "cn" }}
+                                                            to="/content/worksheets/$number"
+                                                            target="_blank">
+                                                            <FileText aria-hidden="true" className="size-4" />
+                                                            Worksheet 中文
+                                                            <ArrowUpRight aria-hidden="true" className="ml-auto size-4" />
+                                                        </Link>
+                                                    </div>
                                                 ) : (
                                                     <TooltipProvider>
                                                         <Tooltip>
@@ -84,7 +103,10 @@ function App() {
                                                                     disabled>
                                                                     <FileText aria-hidden="true" className="size-4" />
                                                                     Worksheet
-                                                                    <ArrowUpRight aria-hidden="true" className="ml-auto size-4" />
+                                                                    <ArrowUpRight
+                                                                        aria-hidden="true"
+                                                                        className="ml-auto size-4"
+                                                                    />
                                                                 </Button>
                                                             </TooltipTrigger>
                                                             <TooltipContent side="left">

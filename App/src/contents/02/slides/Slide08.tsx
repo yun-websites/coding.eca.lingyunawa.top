@@ -13,8 +13,8 @@ export default function Slide08() {
                 <p>{'{"subject": "Python"}'} &nbsp; (31.2, 120.6)</p>
             </div>
             <p className="hint">
-                Write: <InlineCode>str</InlineCode>, <InlineCode>int</InlineCode>, <InlineCode>float</InlineCode>, <InlineCode>list</InlineCode>, <InlineCode>dict</InlineCode>, or{" "}
-                <InlineCode>tuple</InlineCode>.
+                Write: <InlineCode>str</InlineCode>, <InlineCode>int</InlineCode>, <InlineCode>float</InlineCode>,{" "}
+                <InlineCode>list</InlineCode>, <InlineCode>dict</InlineCode>, or <InlineCode>tuple</InlineCode>.
             </p>
         </Slide>
     );

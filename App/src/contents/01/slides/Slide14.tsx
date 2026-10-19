@@ -55,7 +55,8 @@ export default function Slide14() {
                 <Kicker>NAMING RULES</Kicker>
                 <h2>Three variable naming rules</h2>
                 <p className="tip">
-                    A good name should explain its purpose: <InlineCode>student_name</InlineCode> is clearer than <InlineCode>x</InlineCode>.
+                    A good name should explain its purpose: <InlineCode>student_name</InlineCode> is clearer than{" "}
+                    <InlineCode>x</InlineCode>.
                 </p>
             </Slide>
         </Stack>

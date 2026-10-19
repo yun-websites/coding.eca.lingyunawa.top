@@ -114,24 +114,6 @@ export function WelcomeCardDocument() {
                         ))}
                     </View>
                 </View>
-                <View style={pdfStyles.callout}>
-                    <Text>
-                        Upload your Python file named welcome_card.py if applicable, after the holiday, give the completed
-                        worksheet to Jim.
-                    </Text>
-                    <Text> </Text>
-                    <Text>
-                        You may need a computer for using Python software, even through you can directly write codes with
-                        nodepad.
-                    </Text>
-                    <Text>Email or send Teams messages to Jim if you need help with it.</Text>
-                    <Text> </Text>
-                    <Text>Online Submission: https://link.lingyunawa.top/ssf/eca/coding-2627/students</Text>
-                    <Text>
-                        Digital Materials (this one is Homework-22Sep2026.pdf):
-                        https://link.lingyunawa.top/ssf/eca/coding-2627/materials
-                    </Text>
-                </View>
                 <Footer page={2} />
             </Page>
         </Document>

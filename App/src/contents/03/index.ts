@@ -14,7 +14,8 @@ import Slide13 from "./slides/Slide13";
 import Slide14 from "./slides/Slide14";
 import Slide15 from "./slides/Slide15";
 import Slide16 from "./slides/Slide16";
-import { ConditionsLoopsDocument } from "./worksheet/content";
+import { ConditionsLoopsDocument as CnWorksheet } from "./worksheet/cn";
+import { ConditionsLoopsDocument as EnWorksheet } from "./worksheet/en";
 
 export default {
     metadata: {
@@ -23,5 +24,8 @@ export default {
         summary: "Use conditions and loops to make a Python program choose, repeat, and respond.",
     },
     slides: [Slide01, Slide02, Slide03, Slide04, Slide05, Slide06, Slide07, Slide08, Slide09, Slide10, Slide11, Slide12, Slide13, Slide14, Slide15, Slide16],
-    worksheet: ConditionsLoopsDocument,
+    worksheet: {
+        en: EnWorksheet,
+        cn: CnWorksheet,
+    },
 };

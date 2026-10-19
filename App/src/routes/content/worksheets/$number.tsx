@@ -7,6 +7,8 @@ import "@/styles/app.css";
 import "@/styles/worksheet.css";
 import { ThemeProvider } from "@/components/general/theme-provider";
 
+type WorksheetLanguage = "en" | "cn";
+
 const lessonModules = import.meta.glob<{ default: LessonContent }>("../../../contents/*/index.ts", { eager: true });
 
 function getLesson(number: string) {
@@ -19,15 +21,19 @@ function getLesson(number: string) {
     const normalizedNumber = String(lessonNumber).padStart(2, "0");
     const modulePath = `../../../contents/${normalizedNumber}/index.ts`;
 
-    return lessonModules[modulePath]?.default;
+    return Object.entries(lessonModules).find(([path]) => path === modulePath)?.[1].default;
 }
 
 export const Route = createFileRoute("/content/worksheets/$number")({
+    validateSearch: (search): { lang: WorksheetLanguage } => ({
+        lang: search.lang === "cn" ? "cn" : "en",
+    }),
     component: LessonSlidesPage,
 });
 
 function LessonSlidesPage() {
     const { number } = Route.useParams();
+    const { lang } = Route.useSearch();
     const lesson = getLesson(number);
 
     if (!lesson) {
@@ -41,7 +47,9 @@ function LessonSlidesPage() {
         );
     }
 
-    if (!lesson.worksheet) {
+    const Worksheet = lesson.worksheet?.[lang];
+
+    if (!Worksheet) {
         return (
             <main className="flex min-h-screen items-center justify-center p-8">
                 <div>
@@ -54,7 +62,7 @@ function LessonSlidesPage() {
 
     return (
         <ThemeProvider>
-            <PreviewShell document={lesson.worksheet} />
+            <PreviewShell document={Worksheet} />
         </ThemeProvider>
     );
 }
