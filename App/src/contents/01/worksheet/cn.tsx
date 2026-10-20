@@ -22,7 +22,7 @@ export function WelcomeCardDocument() {
     return (
         <Document title="Python 欢迎卡 Worksheet - 第 01 章" author="Coding Club">
             <Page size="A4" style={pdfStyles.cjkPage}>
-                <WorksheetHeader title="Python 欢迎卡 Worksheet" subtitle="" lessonNumber={1} />
+                <WorksheetHeader title="Python 欢迎卡 Worksheet" subtitle="" lessonNumber={1} language="cn" />
                 <View style={{ ...pdfStyles.section, marginBottom: -4 }}>
                     <Text style={pdfStyles.sectionTitle}>按顺序完成任务</Text>
                     <Text style={pdfStyles.sectionIntro}>测试代码前先写下答案。打印后请使用清晰易读的字迹。</Text>

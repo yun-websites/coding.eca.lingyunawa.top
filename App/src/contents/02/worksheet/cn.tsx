@@ -6,7 +6,7 @@ import { TaskCard } from "@/components/worksheets/TaskCard";
 import { WorksheetHeader } from "@/components/worksheets/WorksheetHeader";
 import { pdfStyles } from "@/lib/config";
 
-const title = "变量工具箱课堂检查";
+const title = "Python 变量 Worksheet";
 const summary = "第 02 章 · input()、类型和数据容器";
 
 function Footer({ page }: { page: number }) {
@@ -17,7 +17,13 @@ export function VariableToolboxDocument() {
     return (
         <Document title="变量工具箱课堂检查 - 第 02 章" author="Coding Club">
             <Page size="A4" style={pdfStyles.cjkPage}>
-                <WorksheetHeader title={title} subtitle="先预测，再运行代码。" lessonNumber={2} activityLabel="课堂检查" />
+                <WorksheetHeader
+                    title={title}
+                    subtitle="先预测，再运行代码。"
+                    lessonNumber={2}
+                    activityLabel="课堂检查"
+                    language="cn"
+                />
                 <TaskCard number="1" title="写出数据类型">
                     <Text style={pdfStyles.taskBody}>为每个值写出最合适的类型。</Text>
                     <Text style={pdfStyles.code}>{'"blue"\n\n3.1\n["coding", "music"]\n{"name": "Mina"}\n(31.2, 120.6)'}</Text>
@@ -55,8 +61,8 @@ export function VariableToolboxDocument() {
                 </TaskCard>
                 <TaskCard number="4" title="运行之后">
                     <Text style={pdfStyles.prompt}>为每种类型写出一个变量名和它保存的值。</Text>
-                    {['"str"', '"int"', '"float"', '"list"', '"dict"', '"tuple"'].map((type) => (
-                        <Text style={{ ...pdfStyles.taskBody, marginTop: -4 }} key={type}>
+                    {['"str"', '"int"', '"float"', '"list"', '"dict"', '"tuple"'].map((type, index) => (
+                        <Text style={{ ...pdfStyles.taskBody, marginTop: index === 0 ? 2 : -4 }} key={type}>
                             {type}: ____________________ = ____________________
                         </Text>
                     ))}

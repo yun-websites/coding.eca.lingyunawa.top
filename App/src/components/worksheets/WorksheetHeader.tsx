@@ -7,9 +7,19 @@ interface WorksheetHeaderProps {
     subtitle: string;
     lessonNumber: number;
     activityLabel?: string;
+    language?: "en" | "cn";
 }
 
-export function WorksheetHeader({ title, subtitle, lessonNumber, activityLabel = "Homework" }: WorksheetHeaderProps) {
+export function WorksheetHeader({
+    title,
+    subtitle,
+    lessonNumber,
+    activityLabel = "Homework",
+    language = "en",
+}: WorksheetHeaderProps) {
+    const studentNameLabel = language === "cn" ? "学生姓名" : "Student name";
+    const dateLabel = language === "cn" ? "日期" : "Date";
+
     return (
         <View style={pdfStyles.header}>
             <Text style={pdfStyles.eyebrow}>
@@ -18,8 +28,8 @@ export function WorksheetHeader({ title, subtitle, lessonNumber, activityLabel =
             <Text style={pdfStyles.title}>{title}</Text>
             <Text style={pdfStyles.subtitle}>{subtitle}</Text>
             <View style={pdfStyles.studentRow}>
-                <StudentField label="Student name" lineCount={40} />
-                <StudentField label="Date" lineCount={40} />
+                <StudentField label={studentNameLabel} lineCount={40} />
+                <StudentField label={dateLabel} lineCount={40} />
             </View>
         </View>
     );

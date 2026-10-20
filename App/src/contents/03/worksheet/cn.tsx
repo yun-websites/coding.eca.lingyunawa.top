@@ -7,7 +7,7 @@ import { TaskCard } from "@/components/worksheets/TaskCard";
 import { WorksheetHeader } from "@/components/worksheets/WorksheetHeader";
 import { pdfStyles } from "@/lib/config";
 
-const title = "条件与循环课堂检查";
+const title = "Python 条件与循环 Worksheet";
 const summary = "第 03 章 · 条件、for 和 while";
 const compactWorksheetStyles = {
     taskBody: { ...pdfStyles.taskBody, lineHeight: 1.2 },
@@ -21,7 +21,13 @@ export function ConditionsLoopsDocument() {
     return (
         <Document title="条件与循环课堂检查 - 第 03 章" author="Coding Club">
             <Page size="A4" style={pdfStyles.cjkPage}>
-                <WorksheetHeader title={title} subtitle="先预测，再运行代码。" lessonNumber={3} activityLabel="课堂检查" />
+                <WorksheetHeader
+                    title={title}
+                    subtitle="先预测，再运行代码。"
+                    lessonNumber={3}
+                    activityLabel="课堂检查"
+                    language="cn"
+                />
                 <TaskCard number="1" title="预测条件结果">
                     <Text style={pdfStyles.taskBody}>不运行代码，先判断变量中会保存什么值。</Text>
                     <CodeBlock
