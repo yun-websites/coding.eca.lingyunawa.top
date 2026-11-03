@@ -7,7 +7,7 @@ import { TaskCard } from "@/components/worksheets/TaskCard";
 import { WorksheetHeader } from "@/components/worksheets/WorksheetHeader";
 import { pdfStyles } from "@/lib/config";
 
-const title = "函数课堂检查";
+const title = "Python 函数 Worksheet";
 const summary = "第 04 章 · 定义、调用和复用函数";
 const compactWorksheetStyles = {
     taskBody: { ...pdfStyles.taskBody, lineHeight: 1.2 },
