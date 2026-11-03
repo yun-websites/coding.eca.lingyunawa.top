@@ -1,2 +1,2 @@
-cd App
-nr dev
+Set-Location App
+nr dev @args
