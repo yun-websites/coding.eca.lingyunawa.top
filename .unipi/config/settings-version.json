@@ -1,0 +1,19 @@
+{
+  "migrated_version": "3.0.0",
+  "finalized": false,
+  "appliedAt": "2026-11-08T23:17:36.672Z",
+  "log": [
+    {
+      "action": "skipped:missing",
+      "from": "/Users/jimlin/Study/ECA-2627-Coding/.unipi/config/compactor.json"
+    },
+    {
+      "action": "skipped:missing",
+      "from": "/Users/jimlin/Study/ECA-2627-Coding/.unipi/fusion-preset.json"
+    },
+    {
+      "action": "skipped:missing",
+      "from": "/Users/jimlin/Study/ECA-2627-Coding/.unipi/config/background-tasks.json"
+    }
+  ]
+}
