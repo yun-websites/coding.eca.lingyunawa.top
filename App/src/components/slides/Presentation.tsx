@@ -7,7 +7,7 @@ import RevealNotes from "reveal.js/plugin/notes";
 
 import "reveal.js/reveal.css";
 import "reveal.js/theme/white.css";
-import "reveal.js/plugin/highlight/monokai.css";
+import "@/styles/highlight.css";
 
 export interface PresentationProps {
     slides: readonly ComponentType[];
