@@ -128,25 +128,52 @@ function App() {
                                                             </div>
                                                         ) : (
                                                             <TooltipProvider>
-                                                                <Tooltip>
-                                                                    <TooltipTrigger render={<span />}>
-                                                                        <Button
-                                                                            className="w-full justify-start"
-                                                                            variant="secondary"
-                                                                            disabled>
-                                                                            <FileText aria-hidden="true" className="size-4" />
-                                                                            Worksheet
-                                                                            <ArrowUpRight
-                                                                                aria-hidden="true"
-                                                                                className="ml-auto size-4"
-                                                                            />
-                                                                        </Button>
-                                                                    </TooltipTrigger>
-                                                                    <TooltipContent side="left">
-                                                                        <XIcon size={12} />
-                                                                        No worksheet is available
-                                                                    </TooltipContent>
-                                                                </Tooltip>
+                                                                <div className="flex gap-2">
+                                                                    <Tooltip>
+                                                                        <TooltipTrigger render={<span />}>
+                                                                            <Button
+                                                                                className="w-full justify-start"
+                                                                                variant="secondary"
+                                                                                disabled>
+                                                                                <FileText
+                                                                                    aria-hidden="true"
+                                                                                    className="size-4"
+                                                                                />
+                                                                                Worksheet EN
+                                                                                <ArrowUpRight
+                                                                                    aria-hidden="true"
+                                                                                    className="ml-auto size-4"
+                                                                                />
+                                                                            </Button>
+                                                                        </TooltipTrigger>
+                                                                        <TooltipContent side="top">
+                                                                            <XIcon size={12} />
+                                                                            No worksheet is available
+                                                                        </TooltipContent>
+                                                                    </Tooltip>
+                                                                    <Tooltip>
+                                                                        <TooltipTrigger render={<span />}>
+                                                                            <Button
+                                                                                className="w-full justify-start"
+                                                                                variant="secondary"
+                                                                                disabled>
+                                                                                <FileText
+                                                                                    aria-hidden="true"
+                                                                                    className="size-4"
+                                                                                />
+                                                                                Worksheet 中文
+                                                                                <ArrowUpRight
+                                                                                    aria-hidden="true"
+                                                                                    className="ml-auto size-4"
+                                                                                />
+                                                                            </Button>
+                                                                        </TooltipTrigger>
+                                                                        <TooltipContent side="top">
+                                                                            <XIcon size={12} />
+                                                                            No worksheet is available
+                                                                        </TooltipContent>
+                                                                    </Tooltip>
+                                                                </div>
                                                             </TooltipProvider>
                                                         )}
                                                     </div>
@@ -165,3 +192,4 @@ function App() {
         </ThemeProvider>
     );
 }
+
